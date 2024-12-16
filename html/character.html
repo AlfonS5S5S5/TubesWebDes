@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/character.css">
+  <title>Characters</title>
+</head>
+
+<body>
+  <main>
+  </main>
+  <script>
+    let html = ``;
+    const characters = [
+      {
+        name: "Diluc",
+        src: ""
+      },
+      {
+        name : "Xiao",
+        src : ""
+      },
+      {
+        name : "Klee",
+        src : ""
+      },
+      {
+        name : "Amber",
+        src : ""
+      },
+      {
+        name : "Fischl",
+        src : ""
+      },
+      {
+        name : "Qiqi",
+        src : ""
+      },
+      {
+        name : "Beidou",
+        src : ""
+      },
+      {
+        name : "Zhongli",
+        src : ""
+      },
+      {
+        name : "Nahida",
+        src : ""
+      },
+      {
+        name : "Tighnari",
+        src : ""
+      },
+      {
+        name : "Wanderer (Scaramouche)",
+        src : ""
+      },
+      {
+        name : "Sangonomiya Kokomi",
+        src : ""
+      },
+      {
+        name : "Kamisato Ayaka",
+        src : ""
+      },
+      {
+        name: "Raiden-Ei",
+        src: ""
+      },
+      {
+        name: "Furina",
+        src: ""
+      },
+      {
+        name : "Lyney",
+        src : ""
+      },
+      {
+        name : "Lynette",
+        src : ""
+      },
+      {
+        name : "Freminet",
+        src : ""
+      },
+      {
+        name : "Mavuika",
+        src : ""
+      },
+      {
+        name : "Kinich",
+        src : ""
+      },
+      {
+        name : "Mualani",
+        src : ""
+      },
+
+    ].forEach((character) => {
+      html += `
+        <section>
+          <img src=${character.src}>
+          <p>${character.name}</p>
+        </section>
+        `;
+    });
+    document.querySelector("main").innerHTML = html;
+  </script>
+</body>
+
+</html>

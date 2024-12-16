@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'HYWenHei-85W';
+  src: url('../font/zh-cn.ttf') format('truetype');
+}
+@media (max-width:1080px) {
+  .container{
+    flex-direction: column;
+    height: 1920px;
+  }
+  .container::before{
+    content: "";
+    padding: 0px;
+    background-color: rgb(249, 249, 249);
+    opacity: 30%;
+    z-index: -1; /* Places it behind the content */
+    border-radius: 25px; /* Matches the border-radius of the overlay */
+    position: absolute;
+    height: 93%;
+    width: 80%;
+  }
+  img{
+    height: 300px;
+  }
+  .background-overlay{
+    position: absolute;
+    padding-top: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width:1081px) {
+  .container::before {
+    content: "";
+        padding: 10px;
+        top: 20%;
+        left: 4%;
+        right: 4%;
+        height: 58vh;
+        background-color: rgb(249, 249, 249);
+        opacity: 30%;
+        z-index: -1; /* Places it behind the content */
+        border-radius: 25px; /* Matches the border-radius of the overlay */
+        position: absolute;
+  }
+  .background-overlay{
+    position: absolute;
+    padding-top: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body{
+  font-family: 'HYWenHei-85W';
+  background-image:url(../images/background/electro-background.jpg); /* Replace with the path to your image */
+  background-size: cover; /* Ensures the background image always covers the entire area */
+  background-position: center; /* Keeps the image centered when resized */
+  background-attachment: fixed; /* Keeps the image fixed while the rest of the content scrolls */
+  background-repeat: no-repeat; /* Prevents tiling of the image */
+  height: auto; /* Sets the container height to full viewport height */
+  min-height: 100vh;
+  margin: 0; /* Removes any default margin around the body */
+}
+.container{
+  width:80%;
+  height: auto;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-right:15px;
+  padding-left:15px;
+  border-radius:25px;
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+.character-container, .weapon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 30%;
+}
+img{
+  height: 55vh;
+  border-radius: 20px;
+}
+p{
+  color: white;
+  clear: none;
+  width: 80%;
+  margin: 3% 8%;
+  font-size: small;
+}

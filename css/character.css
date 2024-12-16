@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'HYWenHei-85W';
+  src: url('../font/zh-cn.ttf') format('truetype');
+}
+body{
+  font-family: 'HYWenHei-85W';
+  background-image:url(../images/background/abyss-background.jpg); /* Replace with the path to your image */
+  background-size: cover; /* Ensures the background image always covers the entire area */
+  background-position: center; /* Keeps the image centered when resized */
+  background-attachment: fixed; /* Keeps the image fixed while the rest of the content scrolls */
+  background-repeat: no-repeat; /* Prevents tiling of the image */
+  height: auto; /* Sets the container height to full viewport height */
+  min-height: 100vh;
+  margin: 0; /* Removes any default margin around the body */
+}
+main{
+  margin: 200px 100px;
+}
+section{
+  display: inline-block;
+  padding: 10px 20px;
+  border: 3px solid white;
+}
+section:hover{
+  opacity: 40%;
+  cursor: pointer;
+}
+img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+p{
+  color: white;
+  text-align: center;
+}
