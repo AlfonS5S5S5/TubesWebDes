@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+header.pembuka {
+    text-align: center;
+    background: cornsilk;
+    padding: 2rem;
+    color: black;
+}
+
+header.pembuka h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+header.pembuka p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0;
+}
+
+nav.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gold; 
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap; 
+}
+
+nav.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav.menu a:hover {
+    background-color: orange; 
+    border-radius: 5px;
+}
+
+nav.menu .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+section.info {
+    padding: 2rem;
+    background-color: cornsilk; 
+    text-align: center;
+}
+
+section.info h2 {
+    font-size: 2rem;
+    color: black; 
+}
+
+section.info p {
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+}
+
+section.trailer {
+    padding: 2rem;
+    text-align: center;
+    background-color:white; 
+}
+
+section.trailer h2 {
+    font-size: 2rem;
+    color: black; 
+    margin-bottom: 1rem;
+}
+
+section.trailer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+section.trailer iframe.slider {
+    width: 80%;
+    max-width: 700px;
+    border: 5px solid gold;
+    border-radius: 10px;
+}
+
+section.trailer ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section.trailer ul li {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+section.trailer ul li:hover {
+    transform: scale(1.1);
+}
+
+section.trailer ul li img {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    border: 2px solid gold;
+    border-radius: 5px;
+}
+
+footer.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: gold; 
+    color: white;
+    margin-top: 2rem;
+}
+
+footer.footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+footer.footer .icon {
+    display: inline-block;
+}
+
+footer.footer .icon-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+footer.footer .icon-img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 780px) {
+    .menu {
+         flex-direction: column;
+    }
+	nav.menu a {
+        text-align: center; 
+        padding: 1rem; 
+    }
+	
+}
