@@ -1,114 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/character.css"> 
+    <title>Characters</title>
+  </head>
+  <body>
+    <!--Start of Header--> 
+   <header class="header">
+      <div class="left-section">
+        <img src="../images/icons/paimon.jpg" class="icon" alt="Paimon Icon">
+      </div>
+      <div class="middle-section">
+        <img src="../images/icons/genshin-impact.jpg" class="icon logo" alt="Genshin-Impact Icon">
+        <h1>Genshin Impact</h1>
+      </div>
+      <nav class="right-section">
+        <ul>
+          <li><img src="../images/icons/about.jpg" class="icon" alt="About Icon"></li>
+          <li><img src="../images/icons/quest.jpg" class="icon" alt="Quest Icon"></li>
+          <li><img src="../images/icons/guide.jpg" class="icon" alt="Quest Icon"></li>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/character.css">
-  <title>Characters</title>
-</head>
+          <!--Ini buat character-->
+          <!--<li class="character icon"></li>-->
+          <!--<script src="../scripts/utils/random-character.js"></script>-->
 
-<body>
-  <main>
-  </main>
-  <script>
-    let html = ``;
-    const characters = [
-      {
-        name: "Diluc",
-        src: ""
-      },
-      {
-        name : "Xiao",
-        src : ""
-      },
-      {
-        name : "Klee",
-        src : ""
-      },
-      {
-        name : "Amber",
-        src : ""
-      },
-      {
-        name : "Fischl",
-        src : ""
-      },
-      {
-        name : "Qiqi",
-        src : ""
-      },
-      {
-        name : "Beidou",
-        src : ""
-      },
-      {
-        name : "Zhongli",
-        src : ""
-      },
-      {
-        name : "Nahida",
-        src : ""
-      },
-      {
-        name : "Tighnari",
-        src : ""
-      },
-      {
-        name : "Wanderer (Scaramouche)",
-        src : ""
-      },
-      {
-        name : "Sangonomiya Kokomi",
-        src : ""
-      },
-      {
-        name : "Kamisato Ayaka",
-        src : ""
-      },
-      {
-        name: "Raiden-Ei",
-        src: ""
-      },
-      {
-        name: "Furina",
-        src: ""
-      },
-      {
-        name : "Lyney",
-        src : ""
-      },
-      {
-        name : "Lynette",
-        src : ""
-      },
-      {
-        name : "Freminet",
-        src : ""
-      },
-      {
-        name : "Mavuika",
-        src : ""
-      },
-      {
-        name : "Kinich",
-        src : ""
-      },
-      {
-        name : "Mualani",
-        src : ""
-      },
+        </ul>
+      </nav>
+    </header>
+    <!--End of Header--> 
 
-    ].forEach((character) => {
-      html += `
-        <section>
-          <img src=${character.src}>
-          <p>${character.name}</p>
-        </section>
-        `;
-    });
-    document.querySelector("main").innerHTML = html;
-  </script>
-</body>
-
+    <main></main>
+    <script src="../scripts/character.js" type="module">
+      
+    </script>
+  </body>
 </html>

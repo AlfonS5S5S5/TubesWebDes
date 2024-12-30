@@ -4,28 +4,164 @@
 }
 body{
   font-family: 'HYWenHei-85W';
-  background-image:url(../images/background/abyss-background.jpg); /* Replace with the path to your image */
-  background-size: cover; /* Ensures the background image always covers the entire area */
-  background-position: center; /* Keeps the image centered when resized */
-  background-attachment: fixed; /* Keeps the image fixed while the rest of the content scrolls */
-  background-repeat: no-repeat; /* Prevents tiling of the image */
-  height: auto; /* Sets the container height to full viewport height */
+  background-image:url(../images/background/abyss-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: auto;
   min-height: 100vh;
-  margin: 0; /* Removes any default margin around the body */
+  margin: 0;
 }
+
+/*Start of Header*/
+header{
+  color:rgba(255, 255, 255, 0.854);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  position:static;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:50px;
+  padding:20px;
+  font-size: 25px;
+}
+header div {
+  display: flex;
+  flex-direction: row;
+}
+.middle-section{
+  padding: 0 20px;
+  justify-content: center;
+  align-items: center;
+}
+.right-section{
+  justify-content: end;
+}
+.character{
+  background: url("../images/icons/characters.jpg") no-repeat;
+}
+.change-character{
+  background-position: -65px 0px;
+}
+.icon{
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+  mix-blend-mode: screen;
+}
+h1{
+  font-size: 30px;
+  font-weight: initial;
+  color: white;
+}
+.logo{
+  width: 100px;
+  height: 50px;
+  padding-bottom: 20px;
+  margin-right: 10px;
+}
+.character{
+  height: 80px;
+  width: 65px;
+}
+ul{
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  padding: 0;
+}
+li{
+  margin-left: 1em;
+}
+/*End of Header*/
+
+@media (min-width: 1700px){
+  main {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1699px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1499px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1130px) and (max-width: 1299px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1129px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 830px) and (max-width: 999px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 700px) and (max-width: 829px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  h1{
+    font-size: 18px;
+  }
+  .icon{
+    width: 60px;
+    height: 60px;
+  }
+  .logo{
+    padding-top: 10px;
+    width: 70px;
+    height: 35px;
+  }
+}
+@media (max-width: 699px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+  h1{
+    font-size: 16px;
+  }
+  .icon{
+    width: 50px;
+    height: 50px;
+  }
+  .logo{
+    padding-top: 10px;
+    width: 50px;
+    height: 25px;
+  }
+}
+
+/*Start of Main*/
 main{
   margin: 200px 100px;
+  display: grid;
+  gap: 10px;
 }
 section{
-  display: inline-block;
-  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
   border: 3px solid white;
 }
 section:hover{
   opacity: 40%;
   cursor: pointer;
 }
-img{
+.profile{
   width: 100px;
   height: 100px;
   border-radius: 50px;

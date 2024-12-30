@@ -3,6 +3,16 @@
   src: url('../font/zh-cn.ttf') format('truetype');
 }
 @media (max-width:1080px) {
+  body{
+    min-height: 1800px;
+    display: flex;
+    justify-content: center;
+  }
+  main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
   .container{
     flex-direction: column;
     height: 1920px;
@@ -18,7 +28,7 @@
     height: 93%;
     width: 80%;
   }
-  img{
+  .banner{
     height: 300px;
   }
   .background-overlay{
@@ -30,6 +40,9 @@
   }
 }
 @media (min-width:1081px) {
+  body{
+    min-height: 100vh;
+  }
   .container::before {
     content: "";
         padding: 10px;
@@ -44,7 +57,7 @@
         position: absolute;
   }
   .background-overlay{
-    position: absolute;
+    position: relative;
     padding-top: 16vh;
     display: flex;
     justify-content: center;
@@ -53,15 +66,102 @@
 }
 body{
   font-family: 'HYWenHei-85W';
-  background-image:url(../images/background/electro-background.jpg); /* Replace with the path to your image */
+  /* background-image:url(../images/background/electro-background.jpg); Replace with the path to your image */
   background-size: cover; /* Ensures the background image always covers the entire area */
   background-position: center; /* Keeps the image centered when resized */
   background-attachment: fixed; /* Keeps the image fixed while the rest of the content scrolls */
   background-repeat: no-repeat; /* Prevents tiling of the image */
   height: auto; /* Sets the container height to full viewport height */
-  min-height: 100vh;
   margin: 0; /* Removes any default margin around the body */
 }
+/*Start of Header*/
+header{
+  color:rgba(255, 255, 255, 0.854);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  position:static;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:50px;
+  padding:20px;
+  font-size: 25px;
+}
+header div {
+  display: flex;
+  flex-direction: row;
+}
+.middle-section{
+  padding: 0 20px;
+  justify-content: center;
+  align-items: center;
+}
+.right-section{
+  justify-content: end;
+}
+.character{
+  background: url("../images/icons/characters.jpg") no-repeat;
+}
+.change-character{
+  background-position: -65px 0px;
+}
+.icon{
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+  mix-blend-mode: screen;
+}
+h1{
+  font-size: 30px;
+  font-weight: initial;
+  color: white;
+}
+.logo{
+  width: 100px;
+  height: 50px;
+  padding-bottom: 20px;
+  margin-right: 10px;
+}
+.character{
+  height: 80px;
+  width: 65px;
+}
+@media (max-width: 1080px) {
+  .icon{
+    width: 50px;
+    height: 50px;
+  }
+  .logo{
+    width: 80px;
+    height: 40px;
+  }
+  h1{
+    font-size: 16px;
+  }
+  header{
+    font-size: 20px;
+  }
+  .character{
+    height: 54px;
+    width: 40px;
+    padding: none;
+  }
+  .change-character{
+    background-position: -47px 0px;
+  }
+}
+ul{
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  padding: 0;
+}
+li{
+  margin-left: 1em;
+}
+/*End of Header*/
+
 .container{
   width:80%;
   height: auto;
@@ -79,20 +179,38 @@ body{
   justify-content: center;
   align-items: center;
 }
-.details-container{
+.details{
   display: flex;
-  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
   flex-direction: column;
-  min-width: 30%;
 }
-img{
+.details div{
+  display: block;
+}
+.info{
+text-align:right;
+}
+.banner{
   height: 55vh;
   border-radius: 20px;
 }
-p{
-  color: white;
-  clear: none;
+table{
   width: 80%;
+}
+td{
+  color: white;
   margin: 3% 8%;
   font-size: small;
+}
+td:nth-child(2n+1) {
+  display: flex;
+  margin:0;
+  align-items: start;
+  padding-bottom: 20px;
+  padding-right: 15px;
+}
+td:nth-child(2n) {
+  width: 60%;
+  text-align: right;
 }

@@ -3,35 +3,37 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/character-details.css">
+    <link rel="stylesheet" href="../css/character-details.css"> 
     <title>Character Details</title>
   </head>
   <body>
-    <main>
-      <div class="background-overlay">
-        <div class="container">
-          <div class="character-container">
-            <img src="../images/banner/raiden-banner.jpg">
-          </div>
-          <div class="details-container">
-            <p class="name">
-              Raiden Shogun
-            </p>
-            <p class="element">
-              Electro
-            </p>
-            <p class="profile">
-              Her Excellency, the Almighty Narukami Ogosho, who promised the people of Inazuma an unchanging Eternity.
-            </p>
-   
-          </div>
-          <div class="weapon-container">
-            <img src="../images/weapon/engulfing-lightning.png">
-          </div>
-          
-        </div>
-      </div>
-      
-    </main>
+    <!--Start of Header--> 
+   <header class="header">
+    <div class="left-section">
+      <img src="../images/icons/paimon.jpg" class="icon" alt="Paimon Icon">
+    </div>
+    <div class="middle-section">
+      <img src="../images/icons/genshin-impact.jpg" class="icon logo" alt="Genshin-Impact Icon">
+      <h1>Genshin Impact</h1>
+    </div>
+    <nav class="right-section">
+      <ul>
+        <li><img src="../images/icons/about.jpg" class="icon" alt="About Icon"></li>
+        <li><img src="../images/icons/quest.jpg" class="icon" alt="Quest Icon"></li>
+        <li><img src="../images/icons/guide.jpg" class="icon" alt="Quest Icon"></li>
+
+        <!--Ini buat character-->
+        <li class="character icon"></li>
+        <script src="../scripts/utils/random-character.js"></script>
+
+      </ul>
+    </nav>
+  </header>
+  <!--End of Header--> 
+    <div class="background-overlay">
+      <div class="container">
+        
+    </div>
+    <script src="../scripts/character-details.js" type="module"></script>
   </body>
 </html>
