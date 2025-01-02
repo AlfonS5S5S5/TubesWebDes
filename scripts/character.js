@@ -20,7 +20,7 @@ document.querySelectorAll('section')
       const character = getCharacter(name);
       setPickedCharacter(character);
       console.log(character);
-      window.open("character-details.html");
+      window.open("character-details.html", '_self');
     });
   });
 
