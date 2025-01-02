@@ -78,7 +78,12 @@ li{
 }
 /*End of Header*/
 
-@media (min-width: 1700px){
+@media (min-width: 2200px){
+  main {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1700px) and (max-width: 1899px) {
   main {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
@@ -145,7 +150,7 @@ li{
 
 /*Start of Main*/
 main{
-  margin: 200px 100px;
+  margin: 100px 100px;
   display: grid;
   gap: 10px;
 }
