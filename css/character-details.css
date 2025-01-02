@@ -67,7 +67,7 @@
 }
 body{
   font-family: 'HYWenHei-85W';
-  /* background-image:url(../images/background/electro-background.jpg); Replace with the path to your image */
+  background-image:url(../images/background/electro-background.jpg); /*Replace with the path to your image*/
   background-size: cover; /* Ensures the background image always covers the entire area */
   background-position: center; /* Keeps the image centered when resized */
   background-attachment: fixed; /* Keeps the image fixed while the rest of the content scrolls */
