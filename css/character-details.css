@@ -25,15 +25,16 @@
     z-index: -1; /* Places it behind the content */
     border-radius: 25px; /* Matches the border-radius of the overlay */
     position: absolute;
-    height: 93%;
+    height: 95%;
     width: 80%;
   }
   .banner{
-    height: 300px;
+    min-height: 300px;
+    max-width: 80%;
   }
   .background-overlay{
     position: absolute;
-    padding-top: 24%;
+    padding-top: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,6 +195,7 @@ text-align:right;
 .banner{
   height: 55vh;
   border-radius: 20px;
+  object-fit: cover;
 }
 table{
   width: 80%;
@@ -201,14 +203,14 @@ table{
 td{
   color: white;
   margin: 3% 8%;
-  font-size: small;
+  font-size: 1em;
+  padding-bottom: 20px;
+  padding-right: 15px;
 }
 td:nth-child(2n+1) {
   display: flex;
   margin:0;
   align-items: start;
-  padding-bottom: 20px;
-  padding-right: 15px;
 }
 td:nth-child(2n) {
   width: 60%;
