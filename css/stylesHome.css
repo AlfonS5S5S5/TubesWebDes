@@ -125,17 +125,21 @@ section.trailer ul li img {
 
 footer.footer {
     text-align: center;
-    padding: 1rem;
+    padding: 5px;
     background-color: gold; 
     color: white;
-    margin-top: 2rem;
+    margin-top: 5px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
 footer.footer .social {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-top: 0.5rem;
+    gap: 25px;
+    margin-top: 5px;
+    align-items: center; 
 }
 
 footer.footer .icon {
@@ -151,6 +155,39 @@ footer.footer .icon-img {
 
 footer.footer .icon-img:hover {
     transform: scale(1.2);
+}
+
+footer.footer .feedback {
+    margin-top: 5px;
+    text-align: center;
+    width: 100%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+footer.footer .feedback textarea {
+    width: 80%; 
+    max-width: 500px;
+    padding: 5px;
+    border: 2px solid gold;
+    border-radius: 5px;
+    resize: none;
+}
+
+footer.footer .feedback button {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer.footer .feedback button:hover {
+    background-color: darkorange;
 }
 
 @media (max-width: 780px) {
