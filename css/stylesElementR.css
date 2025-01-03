@@ -11,37 +11,99 @@ body {
     background-color: cornsilk;
 }
 
-nav.menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: gold;
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    flex-wrap: wrap;
+@font-face {
+    font-family: 'HYWenHei-85W';
+    src: url('../font/zh-cn.ttf') format('truetype');
 }
 
-nav.menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    font-weight: 700;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease;
+body {
+    font-family: 'HYWenHei-85W';
+    background-image: url(../images/background/abyss-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: auto;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-image 0.5s ease-in-out;
 }
 
-nav.menu a:hover {
-    background-color: orange;
-    border-radius: 5px;
-}
-
-nav.menu .logo {
-    width: 50px;
+/* Start of Header */
+header {
+    color: rgba(255, 255, 255, 0.854);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    position: static;
+    top: 0px;
+    left: 0px;
+    right: 0px;
     height: 50px;
-    border-radius: 50%;
+    padding: 20px;
+    font-size: 25px;
 }
+
+header div {
+    display: flex;
+    flex-direction: row;
+}
+
+.middle-section {
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section {
+    justify-content: end;
+}
+
+.character {
+    background: url("../images/icons/characters.jpg") no-repeat;
+}
+
+.change-character {
+    background-position: -65px 0px;
+}
+
+.icon {
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    mix-blend-mode: screen;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: initial;
+    color: white;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+    padding-bottom: 20px;
+    margin-right: 10px;
+}
+
+.character {
+    height: 80px;
+    width: 65px;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    padding: 0;
+}
+
+li {
+    margin-left: 1em;
+}
+
+/* End of Header */
 
 @media (max-width: 780px) {
     nav.menu {
