@@ -7,19 +7,19 @@ body {
 header.pembuka {
     text-align: center;
     background: cornsilk;
-    padding: 2rem;
+    padding: 10px;
     color: black;
 }
 
 header.pembuka h1 {
-    font-size: 2.5rem;
+    font-size: 46px;
     font-weight: 700;
     margin: 0;
 }
 
 header.pembuka p {
-    font-size: 1.2rem;
-    margin: 0.5rem 0 0;
+    font-size: 20px;
+    margin: 5px;
 }
 
 nav.menu {
@@ -27,7 +27,7 @@ nav.menu {
     justify-content: space-around;
     align-items: center;
     background-color: gold; 
-    padding: 1rem;
+    padding: 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -37,9 +37,9 @@ nav.menu {
 nav.menu a {
     text-decoration: none;
     color: white;
-    font-size: 1rem;
+    font-size: 17px;
     font-weight: 700;
-    padding: 0.5rem 1rem;
+    padding: 10px 10px;
     transition: background-color 0.3s ease;
 }
 
@@ -55,18 +55,18 @@ nav.menu .logo {
 }
 
 section.info {
-    padding: 2rem;
+    padding: 25px;
     background-color: cornsilk; 
     text-align: center;
 }
 
 section.info h2 {
-    font-size: 2rem;
+    font-size: 35px;
     color: black; 
 }
 
 section.info p {
-    font-size: 1.2rem;
+    font-size: 23px;
     margin: 1rem auto;
     max-width: 800px;
 }
