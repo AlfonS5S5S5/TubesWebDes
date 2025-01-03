@@ -1,36 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archon Quest</title>
     <link rel="stylesheet" type="text/css" href="../css/archonQuest.css">
 </head>
+
 <body>
     <!--Start of Header-->
-  <header class="header">
-    <div class="left-section">
-      <a href="Home Tubes.html"><img src="../images/icons/paimon.jpg" class="icon" alt="Paimon Icon"></a>
+    <header class="header">
+        <div class="left-section">
+            <a href="Home Tubes.html"><img src="../images/icons/paimon.jpg" class="icon" alt="Paimon Icon"></a>
+        </div>
+        <div class="middle-section">
+            <img src="../images/icons/genshin-impact.jpg" class="icon logo" alt="Genshin-Impact Icon">
+            <h1>Genshin Impact</h1>
+        </div>
+        <nav class="right-section">
+            <ul>
+                <li><a href="about.html"><img src="../images/icons/about.jpg" class="icon" alt="About Icon"></a></li>
+                <li><a href="archon_Quest.html"><img src="../images/icons/quest.jpg" class="icon" alt="Quest Icon"></a>
+                </li>
+                <li><a href="ElementalReactions.html"><img src="../images/icons/guide.jpg" class="icon"
+                            alt="Guide Icon"></a>
+                </li>
+
+                <!--Ini buat character-->
+                <li><a href="character.html">
+                        <div class="character icon"></div>
+                    </a></li>
+                <script src="../scripts/utils/random-character.js"></script>
+            </ul>
+        </nav>
+    </header>
+    <!--End of Header-->
+
+    <!-- Regions Section -->
+    <main class="regions-container">
+        <div class="region" data-id="monstadt">
+            <img src="../images/regions/monstadt.jpg" alt="Mondstadt" class="region-image">
+            <h2>Mondstadt</h2>
+        </div>
+        <div class="region" data-id="liyue">
+            <img src="../images/regions/liyue.png" alt="Liyue" class="region-image">
+            <h2>Liyue</h2>
+        </div>
+        <div class="region" data-id="inazuma">
+            <img src="../images/regions/inazuma.jpg" alt="Inazuma" class="region-image">
+            <h2>Inazuma</h2>
+        </div>
+        <div class="region" data-id="sumeru">
+            <img src="../images/regions/sumeru.jpg" alt="Sumeru" class="region-image">
+            <h2>Sumeru</h2>
+        </div>
+        <div class="region" data-id="fontaine">
+            <img src="../images/regions/fontaine.jpg" alt="Fontaine" class="region-image">
+            <h2>Fontaine</h2>
+        </div>
+    </main>
+
+    <div id="synopsis-container">
     </div>
-    <div class="middle-section">
-      <img src="../images/icons/genshin-impact.jpg" class="icon logo" alt="Genshin-Impact Icon">
-      <h1>Genshin Impact</h1>
-    </div>
-    <nav class="right-section">
-      <ul>
-        <li><a href="about.html"><img src="../images/icons/about.jpg" class="icon" alt="About Icon"></a></li>
-        <li><a href="archon_Quest.html"><img src="../images/icons/quest.jpg" class="icon" alt="Quest Icon"></a> </li>
-        <li><a href="ElementalReactions.html"><img src="../images/icons/guide.jpg" class="icon" alt="Guide Icon"></a>
-        </li>
 
-        <!--Ini buat character-->
-        <li><a href="character.html"><div class="character icon"></div></a></li>
-        <script src="../scripts/utils/random-character.js"></script>
-      </ul>
-    </nav>
-  </header>
-  <!--End of Header-->
-
-
+    <script src="../scripts/archonQuest.js"></script>
 </body>
+
 </html>

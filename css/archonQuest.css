@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'HYWenHei-85W';
+    src: url('../font/zh-cn.ttf') format('truetype');
+}
+
+body {
+    font-family: 'HYWenHei-85W';
+    background-image: url(../images/background/abyss-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: auto;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-image 0.5s ease-in-out;
+    animation: gradientBG 15s ease infinite;
+}
+
+/* Start of Header */
+header {
+    color: rgba(255, 255, 255, 0.854);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    position: static;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+}
+
+.middle-section {
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section {
+    justify-content: end;
+}
+
+.character {
+    background: url("../images/icons/characters.jpg") no-repeat;
+}
+
+.change-character {
+    background-position: -65px 0px;
+}
+
+.icon {
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    mix-blend-mode: screen;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: initial;
+    color: white;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+    padding-bottom: 20px;
+    margin-right: 10px;
+}
+
+.character {
+    height: 80px;
+    width: 65px;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    padding: 0;
+}
+
+li {
+    margin-left: 1em;
+}
+
+/* End of Header */
+
+.regions-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.region {
+    width: 18%;
+    cursor: pointer;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.region:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.region-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.region h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 8px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.region:hover h2 {
+    transform: translateY(-5px);
+}
+
+#synopsis-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    margin: 30px auto;
+    font-size: 1.3em;
+    text-align: justify;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+}
+
+#synopsis-container h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #f4e542;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#synopsis-container p {
+    line-height: 1.8;
+    font-size: 1.2em;
+    word-wrap: break-word;
+    color: #d1d1d1;
+}
+
+#synopsis-container:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@media screen and (max-width: 1200px) {
+    .regions-container {
+        padding: 30px;
+    }
+
+    .region {
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .regions-container {
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .region {
+        width: 45%;
+    }
+
+    #synopsis-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .region h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .regions-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    .region {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #synopsis-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .region h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .regions-container {
+        padding: 15px;
+    }
+
+    .region {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #synopsis-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .region h2 {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .logo {
+        width: 80px;
+        height: auto;
+    }
+}
