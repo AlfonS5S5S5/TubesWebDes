@@ -28,3 +28,29 @@ sections.forEach(section => {
         }
     });
 });
+
+document.addEventListener("mousemove", (e) => {
+    const trail = document.createElement("div");
+    trail.style.position = "absolute";
+    trail.style.width = "15px";
+    trail.style.height = "15px";
+    trail.style.borderRadius = "50%";
+    trail.style.background = `radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(0, 191, 255, 0.2))`;
+    trail.style.boxShadow = "0 0 10px rgba(0, 191, 255, 0.8)";
+    trail.style.top = `${e.pageY}px`;
+    trail.style.left = `${e.pageX}px`;
+    trail.style.pointerEvents = "none";
+    trail.style.opacity = "0.9";
+    trail.style.transition = "opacity 1s, transform 1s";
+    trail.style.transform = "translate(-50%, -50%) scale(0)";
+    document.body.appendChild(trail);
+
+    setTimeout(() => {
+        trail.style.opacity = "0";
+        trail.style.transform = "translate(-50%, -50%) scale(2)";
+    }, 0);
+
+    setTimeout(() => {
+        trail.remove();
+    }, 1000);
+});

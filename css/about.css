@@ -14,6 +14,7 @@ body {
     min-height: 100vh;
     margin: 0;
     transition: background-image 0.5s ease-in-out;
+    animation: gradientBG 15s ease infinite;
 }
 
 /* Start of Header */
@@ -214,6 +215,13 @@ li {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .fade-in:nth-child(1) { animation-delay: 0.5s; }
