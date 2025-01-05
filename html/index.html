@@ -5,30 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fandom Genshin Impact</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="test.css">
-<script src="scriptHome.js"></script>
+<link rel="stylesheet" href="../css/stylesHome.css">
+<script src="../scripts/scriptHome.js"></script>
 </head>
 
 <body>
+<header class="pembuka">
+    <h1>Selamat Datang!</h1>
+    <p>Temukan keajaiban dunia Teyvat bersama kami!</p>
+</header>
 
 <!--Start of Header--> 
 <header class="header">
     <div class="left-section">
-      <a href="index.html"><img src="paimon.jpg" class="icon" alt="Paimon Icon"></a>
+      <a href="Home Tubes.html"><img src="../images/icons/paimon.jpg" class="icon" alt="Paimon Icon"></a>
     </div>
     <div class="middle-section">
-      <img src="genshin-impact.jpg" class="icon logo" alt="Genshin-Impact Icon">
+      <img src="../images/icons/genshin-impact.jpg" class="icon logo" alt="Genshin-Impact Icon">
       <h1>Genshin Impact</h1>
     </div>
     <nav class="right-section">
       <ul>
-        <li><a href="about.html"><img src="about.jpg" class="icon" alt="About Icon"></a></li>
-        <li><a href="archon_Quest.html"><img src="quest.jpg" class="icon" alt="Quest Icon"></a> </li>
-        <li><a href="ElementalReactions.html"><img src="guide.jpg" class="icon" alt="Guide Icon"></a> </li>
+        <li><a href="about.html"><img src="../images/icons/about.jpg" class="icon" alt="About Icon"></a></li>
+        <li><a href="archon_Quest.html"><img src="../images/icons/quest.jpg" class="icon" alt="Quest Icon"></a> </li>
+        <li><a href="ElementalReactions.html"><img src="../images/icons/guide.jpg" class="icon" alt="Guide Icon"></a> </li>
 
         <!--Ini buat character-->
-        <li><a href="character.html"><img src="characters.jpg" class="character icon" alt="characters Icon"></a></li>
-        <script src="/random-character.js"></script>
+        <li><a href="character.html"><div class="character icon"></div></a></li>
+        <script src="../scripts/utils/random-character.js"></script>
       </ul>
     </nav>
   </header>
@@ -47,19 +51,19 @@
 
     <ul>
        <li onclick="videoslider('v1.mp4')">
-       <img src="t1.png" alt="1">
+       <img src="../images/t1.png" alt="1">
        </li>
 		  
        <li onclick="videoslider('v2.mp4')">
-       <img src="/t2.png" alt="2">
+       <img src="../images/t2.png" alt="2">
        </li>
 		  
        <li onclick="videoslider('v3.mp4')">
-       <img src="t3.png" alt="3">
+       <img src="../images/t3.png" alt="3">
        </li>
 			
        <li onclick="videoslider('v4.mp4')">
-       <img src="t4.png" alt="4">
+       <img src="../images/t4.png" alt="4">
        </li>
     </ul>
 		
@@ -72,16 +76,16 @@
 <p>Follow Genshin Impact on:</p>
     <div class="social">
         <a href="https://www.facebook.com/Genshinimpact" target="_blank" class="icon">
-            <img src="fb.png" alt="Facebook" class="icon-img">
+            <img src="../images/fb.png" alt="Facebook" class="icon-img">
         </a>
         <a href="https://twitter.com/GenshinImpact" target="_blank" class="icon">
-            <img src="twit.jpg" alt="Twitter" class="icon-img">
+            <img src="../images/twit.jpg" alt="Twitter" class="icon-img">
         </a>
         <a href="https://www.youtube.com/c/GenshinImpact" target="_blank" class="icon">
-            <img src="yt.png" alt="YouTube" class="icon-img">
+            <img src="../images/yt.png" alt="YouTube" class="icon-img">
         </a>
         <a href="https://www.instagram.com/genshinimpact/" target="_blank" class="icon">
-            <img src="ig.png" alt="Instagram" class="icon-img">
+            <img src="../images/ig.png" alt="Instagram" class="icon-img">
         </a>
     </div>
 <div class="feedback">
@@ -90,7 +94,7 @@
     <button type="button" onclick="alert('Terima kasih atas feedback Anda!')">Kirim</button>
 </div>
 </footer>
-      
-    </script>
-  </body>
+
+
+</body>
 </html>
