@@ -54,3 +54,4 @@ document.addEventListener("mousemove", (e) => {
         trail.remove();
     }, 1000);
 });
+
