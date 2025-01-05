@@ -1,95 +1,38 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fandom Genshin Impact</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="test.css">
-<script src="scriptHome.js"></script>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/character.css"> 
+    <title>Characters</title>
+  </head>
+  <body>
+    <!--Start of Header--> 
+   <header class="header">
+      <div class="left-section">
+        <img src="../images/icons/paimon.jpg" class="icon" alt="Paimon Icon">
+      </div>
+      <div class="middle-section">
+        <img src="../images/icons/genshin-impact.jpg" class="icon logo" alt="Genshin-Impact Icon">
+        <h1>Genshin Impact</h1>
+      </div>
+      <nav class="right-section">
+        <ul>
+          <li><img src="../images/icons/about.jpg" class="icon" alt="About Icon"></li>
+          <li><img src="../images/icons/quest.jpg" class="icon" alt="Quest Icon"></li>
+          <li><img src="../images/icons/guide.jpg" class="icon" alt="Quest Icon"></li>
 
-<body>
+          <!--Ini buat character-->
+          <!--<li class="character icon"></li>-->
+          <!--<script src="../scripts/utils/random-character.js"></script>-->
 
-<!--Start of Header--> 
-<header class="header">
-    <div class="left-section">
-      <a href="index.html"><img src="paimon.jpg" class="icon" alt="Paimon Icon"></a>
-    </div>
-    <div class="middle-section">
-      <img src="genshin-impact.jpg" class="icon logo" alt="Genshin-Impact Icon">
-      <h1>Genshin Impact</h1>
-    </div>
-    <nav class="right-section">
-      <ul>
-        <li><a href="about.html"><img src="about.jpg" class="icon" alt="About Icon"></a></li>
-        <li><a href="archon_Quest.html"><img src="quest.jpg" class="icon" alt="Quest Icon"></a> </li>
-        <li><a href="ElementalReactions.html"><img src="guide.jpg" class="icon" alt="Guide Icon"></a> </li>
+        </ul>
+      </nav>
+    </header>
+    <!--End of Header--> 
 
-        <!--Ini buat character-->
-        <li><a href="character.html"><img src="characters.jpg" class="character icon" alt="characters Icon"></a></li>
-        <script src="/random-character.js"></script>
-      </ul>
-    </nav>
-  </header>
-  <!--End of Header-->
-
-<section id="about" class="info">
-<h2>About Genshin Impact</h2>
-<p>Genshin Impact adalah sebuah game Open World Action RPG yang dikembangkan dan dipublikasikan oleh miHoYo untuk platform PC, iOS/Android, dan PS4/PS5. Game ini dapat dimainkan secara gratis dengan sistem undian Gacha berupa Wish.</p>
-</section>
-
-<section class="trailer">
-<h2>Trailer Genshin Impact</h2>
-<div class="container">
-	
-<iframe id="videoPlayer" class="slider" width="560" height="315" src="https://www.youtube.com/embed/TAlKhARUcoY?si=zGGbYyiXCYVNciv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    <ul>
-       <li onclick="videoslider('v1.mp4')">
-       <img src="t1.png" alt="1">
-       </li>
-		  
-       <li onclick="videoslider('v2.mp4')">
-       <img src="/t2.png" alt="2">
-       </li>
-		  
-       <li onclick="videoslider('v3.mp4')">
-       <img src="t3.png" alt="3">
-       </li>
-			
-       <li onclick="videoslider('v4.mp4')">
-       <img src="t4.png" alt="4">
-       </li>
-    </ul>
-		
-</div>
-</section>
-
-
-
-<footer class="footer">
-<p>Follow Genshin Impact on:</p>
-    <div class="social">
-        <a href="https://www.facebook.com/Genshinimpact" target="_blank" class="icon">
-            <img src="fb.png" alt="Facebook" class="icon-img">
-        </a>
-        <a href="https://twitter.com/GenshinImpact" target="_blank" class="icon">
-            <img src="twit.jpg" alt="Twitter" class="icon-img">
-        </a>
-        <a href="https://www.youtube.com/c/GenshinImpact" target="_blank" class="icon">
-            <img src="yt.png" alt="YouTube" class="icon-img">
-        </a>
-        <a href="https://www.instagram.com/genshinimpact/" target="_blank" class="icon">
-            <img src="ig.png" alt="Instagram" class="icon-img">
-        </a>
-    </div>
-<div class="feedback">
-    <p>Berikan Feedback Anda:</p>
-    <textarea rows="4" cols="50" placeholder="Tulis masukan Anda di sini"></textarea>
-    <button type="button" onclick="alert('Terima kasih atas feedback Anda!')">Kirim</button>
-</div>
-</footer>
+    <main></main>
+    <script src="../scripts/character.js" type="module">
       
     </script>
   </body>
