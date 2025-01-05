@@ -20,87 +20,81 @@ body {
 /* Start of Header */
 header {
     color: rgba(255, 255, 255, 0.854);
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    position: static;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    height: 50px;
-    padding: 20px;
-    font-size: 25px;
-}
-
-header div {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    padding: 0 20px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.middle-section {
-    padding: 0 20px;
-    justify-content: center;
+.left-section {
+    display: flex;
     align-items: center;
 }
 
+.middle-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
 .right-section {
-    justify-content: end;
+    display: flex;
+    align-items: center;
 }
 
-.character {
-    background: url("../images/icons/characters.jpg") no-repeat;
+.right-section ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
 }
 
-.change-character {
-    background-position: -65px 0px;
+ul li {
+    margin: 0;
 }
 
 .icon {
-    background-size: cover;
-    width: 70px;
-    height: 70px;
-    mix-blend-mode: screen;
-}
-
-h1 {
-    font-size: 30px;
-    font-weight: initial;
-    color: white;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
 }
 
 .logo {
     width: 100px;
-    height: 50px;
-    padding-bottom: 20px;
-    margin-right: 10px;
+    height: auto;
+	margin: 10px;
 }
 
 .character {
-    height: 80px;
-    width: 65px;
+    width: 70px;
+    height: 60px;
 }
 
-ul {
-    margin: 0;
-    list-style: none;
-    display: flex;
-    justify-content: end;
-    padding: 0;
-}
-
-li {
-    margin-left: 1em;
+h1 {
+    font-size: 24px;
+    color: white;
 }
 
 /* End of Header */
 section.info {
     padding: 25px;
-    background-color: cornsilk; 
+    background-color: cornsilk;
     text-align: center;
 }
 
 section.info h2 {
     font-size: 35px;
-    color: black; 
+    color: black;
 }
 
 section.info p {
@@ -112,12 +106,12 @@ section.info p {
 section.trailer {
     padding: 2rem;
     text-align: center;
-    background-color:white; 
+    background-color: white;
 }
 
 section.trailer h2 {
     font-size: 2rem;
-    color: black; 
+    color: black;
     margin-bottom: 1rem;
 }
 
@@ -164,12 +158,12 @@ section.trailer ul li img {
 footer.footer {
     text-align: center;
     padding: 5px;
-    background-color: gold; 
+    background-color: gold;
     color: white;
     margin-top: 5px;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer.footer .social {
@@ -177,7 +171,7 @@ footer.footer .social {
     justify-content: center;
     gap: 25px;
     margin-top: 5px;
-    align-items: center; 
+    align-items: center;
 }
 
 footer.footer .icon {
@@ -198,14 +192,14 @@ footer.footer .icon-img:hover {
 footer.footer .feedback {
     margin-top: 5px;
     text-align: center;
-    width: 100%; 
+    width: 100%;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
 }
 
 footer.footer .feedback textarea {
-    width: 80%; 
+    width: 80%;
     max-width: 500px;
     padding: 5px;
     border: 2px solid gold;
@@ -228,13 +222,34 @@ footer.footer .feedback button:hover {
     background-color: darkorange;
 }
 
-@media (max-width: 780px) {
-    .menu {
-         flex-direction: column;
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
     }
-	nav.menu a {
-        text-align: center; 
-        padding: 1rem; 
+
+    .middle-section {
+        flex-direction: column;
+        gap: 0px;
     }
-	
+
+    .right-section ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 36px;
+    }
+
+    .icon {
+        width: 40px;
+        height: 34px;
+    }
+	.logo{
+		padding: 1px;
+	}
+
+   h1 {
+        font-size: 18px; 
+        margin: 0; 
+        line-height: 1; 
+    }
 }
