@@ -19,69 +19,76 @@ body {
 
 /* Start of Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: rgba(255, 255, 255, 0.854);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     position: static;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    padding: 0 20px;
-    font-size: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    padding: 20px;
+    font-size: 25px;
 }
 
-.left-section {
+header div {
     display: flex;
-    align-items: center;
+    flex-direction: row;
 }
 
 .middle-section {
-    display: flex;
+    padding: 0 20px;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    text-align: center;
-	
 }
 
 .right-section {
-    display: flex;
-    align-items: center;
+    justify-content: end;
 }
 
-.right-section ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 15px;
+a .character {
+    background: url("../images/icons/characters.jpg") no-repeat;
 }
 
-ul li {
-    margin: 0;
+.change-character {
+    background-position: -65px 0px;
 }
 
-.icon {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
+a .icon {
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    mix-blend-mode: screen;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: initial;
+    color: white;
 }
 
 .logo {
     width: 100px;
-    height: auto;
-	margin: 10px;
+    height: 50px;
+    padding-bottom: 20px;
+    margin-right: 10px;
 }
 
-.character {
-    width: 80px;
-    height: 49px;
+a .character {
+    height: 80px;
+    width: 60px;
 }
 
-h1 {
-    font-size: 24px;
-    color: white;
+ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    padding: 0;
+}
+
+li {
+    margin-left: 1em;
 }
 
 /* End of Header */
