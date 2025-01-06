@@ -208,29 +208,11 @@ li {
     /* color: #ddd; */
 }
 
-.fade-in {
-    opacity: 100;
-    transform: translateY(20px);
-    animation: fadeIn 1s ease-out forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
 @keyframes gradientBG {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-
-.fade-in:nth-child(1) { animation-delay: 0.5s; }
-.fade-in:nth-child(2) { animation-delay: 1s; }
-.fade-in:nth-child(3) { animation-delay: 1.5s; }
 
 /* End of Content */
 /* Responsive Styles */
