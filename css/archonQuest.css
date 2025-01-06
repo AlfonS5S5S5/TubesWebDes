@@ -174,10 +174,6 @@ li {
     color: #d1d1d1;
 }
 
-#synopsis-container:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
-}
 
 @keyframes gradientBG {
     0% { background-position: 0% 50%; }
