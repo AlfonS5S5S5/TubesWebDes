@@ -83,7 +83,7 @@ li{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
-@media (min-width: 1700px) and (max-width: 1899px) {
+@media (min-width: 1700px) and (max-width: 2199px) {
   main {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
