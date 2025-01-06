@@ -127,11 +127,11 @@ li {
     max-width: 550px;
     padding: 2rem;
     border-radius: 15px;
-    color: black;
+    color: #0051ff;
 }
 
 .section:nth-child(1) .text p {
-    color: BLACK;
+    color: #0051ff;
 }
 
 .section:nth-child(2) {
@@ -198,10 +198,6 @@ li {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #ddd;
-}
-
-.section:hover .text {
-    background: rgba(0, 0, 0, 0.85);
 }
 
 .fade-in {
