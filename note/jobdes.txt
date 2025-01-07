@@ -1,0 +1,11 @@
+1. Evan
+    Page Character & Character Details
+	HTML CSS JS
+
+2. Fahad
+    Home & Elemental Reaction
+    HTML CSS JS
+
+3. Alfons
+    About & Archon Quest
+    about.html, archon_Quest.html, about.css, archonQuest.css, effect.js, archonQuest.js
