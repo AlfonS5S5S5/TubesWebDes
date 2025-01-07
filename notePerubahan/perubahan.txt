@@ -1,0 +1,16 @@
+perubahan pada about, archonQuest
+
+
+about.html: merubah total bagian body nya dengan menambahkan video, gambar, footer
+
+effect.js: menambahkan eventListener untuk pergerakan mouse agar gambar yang digunakan bisa mengikuti Gerakan mouse, menambahkan moveslide yang berguna untuk bagian galeri (yang menampilkan tiap foto tiap kita pencet next atau prev)
+
+about.css: ditambahkan yang dibutuhkan untuk bagian" yang dirubah dari html, effect background gradient, perubahan pada responsive
+
+
+
+archonQuest.html : merubah tampilan html dari yang menampilkan semua region nya jadi region tampil satu per satu dan berganti tiap scroll, menambahkan juga bookmark yang berguna untuk langsung mengarah ke id tertentu
+
+archonQuest.css:  background image, transition untuk per region, penambahan pada responsive
+
+archonQuest.js: digunakan untuk href ke id tertentu.
