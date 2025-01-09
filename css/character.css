@@ -27,7 +27,7 @@ header{
   padding:20px;
   font-size: 25px;
 }
-header div {
+header nav {
   display: flex;
   flex-direction: row;
 }
