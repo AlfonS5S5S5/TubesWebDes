@@ -2,6 +2,7 @@ import { characters, getCharacter, getPickedCharacter, setPickedCharacter } from
 
 let html = ``;
 
+//untuk setiap character, dibuat section dan dimasukan ke variable html
 characters.forEach((character) => {
   html += `
   <section data-name="${character.name}">
@@ -11,16 +12,18 @@ characters.forEach((character) => {
   `;
 });
 
+//menambahkan section-section tadi ke <main> di character.html
 document.querySelector("main").innerHTML = html;
 
+//menambahkan event listener untuk setiap section
 document.querySelectorAll('section')
   .forEach((section) => {
     section.addEventListener('click', () => {
-      const name = section.dataset.name;
-      const character = getCharacter(name);
-      setPickedCharacter(character);
-      console.log(character);
-      window.open("character-details.html", '_self');
+      const name = section.dataset.name; //mengambil nama character yang ada di section sebagai dataset saat section diclick
+      const character = getCharacter(name); //mendapatkan object/character yang sesuai dengan nama yang diambil
+      setPickedCharacter(character); //menjalankan function untuk set character yang diclick di variable (pickedCharacter) 
+      console.log(character); //pengecekan untuk developer
+      window.open("character-details.html", '_self'); //membuka character-details.html
     });
   });
 
