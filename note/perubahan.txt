@@ -1,4 +1,4 @@
-perubahan pada about, archonQuest
+perubahan pada about, archonQuest, character, characters, random-character, character-details
 
 
 about.html: merubah total bagian body nya dengan menambahkan video, gambar, footer
@@ -14,3 +14,6 @@ archonQuest.html : merubah tampilan html dari yang menampilkan semua region nya 
 archonQuest.css:  background image, transition untuk per region, penambahan pada responsive
 
 archonQuest.js: digunakan untuk href ke id tertentu.
+
+
+menambahkan dokumentasi pada character.html character.js,  characters.js,  character-details.html,  character-details.js dan random-character.js
