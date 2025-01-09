@@ -1,15 +1,15 @@
+//fungsi ini digunakan untuk mendapatkan data character yang berbentuk objek sesuai nama character sebagai parameternya
 export function getCharacter(characterName) {
   let matchingCharacter;
-
   characters.forEach((character) => {
     if (character.name === characterName) {
       matchingCharacter = character;
     }
   });
-
   return matchingCharacter;
 }
 
+//berikut data obejct character yang disimpan dalam array
 export const characters = [
   {
     name : "Albedo",
@@ -420,10 +420,14 @@ export const characters = [
   },
 ];
 
+//variable untuk menyimpan character yang dipilih di character.html
 let pickedCharacter;
 
+//memuat character dari storage
 export function loadFromStorage() {
   pickedCharacter = JSON.parse(localStorage.getItem('pickedCharacter'));
+
+  //jika tidak ada, maka akan digantikan dengan objek character Raiden Shogun
   if(!pickedCharacter) {
     pickedCharacter = {
       name : "Raiden Shogun",
@@ -439,15 +443,18 @@ export function loadFromStorage() {
   }
 }
 
+//menyimpan character pilihan dalam storage
 function saveToStorage() {
   localStorage.setItem('pickedCharacter', JSON.stringify(pickedCharacter));
 }
 
+//mengatur pickedCharacter dengan character(dalam bentuk objek) sebagai parameter
 export function setPickedCharacter(character) {
   pickedCharacter = character;
   saveToStorage()
 }
 
+//mengambil pickedCharacter dari storage
 export function getPickedCharacter() {
   loadFromStorage();
   return pickedCharacter;
