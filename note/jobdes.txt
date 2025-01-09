@@ -1,6 +1,8 @@
 1. Evan
-    Page Character & Character Details
-	HTML CSS JS
+    Character dan Character Details
+    character.html, character-details.html
+    character.css, character-details.css
+    character.js, characters.js, character-details.js, random-character.js
 
 2. Fahad
     Home & Elemental Reaction
